@@ -5,5 +5,5 @@ Anton Nekhaev 1 year of bachelor
 
 upd: please do not steal my solutions, just contact with me in telegram @anekhaev 
 
-# Authors
+# Author
 [Anton Nekhaev](https://t.me/anekhaev) <-- just click here
