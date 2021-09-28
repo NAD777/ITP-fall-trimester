@@ -3,4 +3,4 @@
 Please do not steal my solutions, just contact with me in telegram
 
 # Author
-[Anton Nekhaev 1st year bachelor](https://t.me/anekhaev) <-- just click here
+[Anton Nekhaev 1st year of bachelor](https://t.me/anekhaev) <-- just click here
