@@ -65,6 +65,7 @@ int validation_of_date_time(char s[], char *data, char *time) {
           s[16] == ':' && ('0' <= s[17] && s[17] <= '9') && ('0' <= s[18] && s[18] <= '9'))) {
         return 0;
     }
+    // when we go to cinema "Duna"
 
     int day, mon, year, hours, minutes, sec;
     sscanf(s, "%d/%d/%d %d:%d:%d", &day, &mon, &year, &hours, &minutes, &sec);
