@@ -8,7 +8,7 @@ public class Main {
 
     public static void main(String[] args) {
         Author a1 = new Author("Anton", "anton.nehaeff@yandex.ru", "Male");
-        Book b1 = new Book("ITP-fall-trimester", a1, 100, 1);
+        Book b1 = new Book("ITP-fall-trimester", a1, 100.99, 1);
         Library library = new Library();
         library.addBook(b1);
         Book b2 = new Book("Math Analysis", a1, 500, 1);
@@ -36,19 +36,51 @@ class Author {
 class Book {
     private String name;
     private Author author;
-    private int price;
+    private double price;
     private int qty;
 
-    Book(String name, Author author, int price, int qty) {
+    Book(String name, Author author, double price, int qty) {
+        this.setName(name);
+        this.setAuthor(author);
+        this.setPrice(price);
+        this.setQty(qty);
+    }
+
+    String getName() {
+        return this.name;
+    }
+
+    void setName(String name) {
         this.name = name;
+    }
+
+    Author getAuthor() {
+        return this.author;
+    }
+
+    void setAuthor(Author author) {
         this.author = author;
+    }
+
+    double getPrice() {
+        return this.price;
+    }
+
+    void setPrice(double price) {
         this.price = price;
+    }
+
+    int getQty() {
+        return this.qty;
+    }
+
+    void setQty(int qty) {
         this.qty = qty;
     }
 
     String getString() {
-        return String.format("----------\nAuthor Info:\n%s\n\nBook title: %s\nPrice: %d\nQuanity: %d\n----------\n",
-                this.author.getString(), this.name, this.price, this.qty);
+        return String.format("----------\nAuthor Info:\n%s\n\nBook title: %s\nPrice: %.2f\nQuanity: %d\n----------\n",
+                this.author.getString(), this.getName(), this.getPrice(), this.getQty());
     }
 }
 
