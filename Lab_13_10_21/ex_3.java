@@ -87,7 +87,7 @@ class Alien extends Creature {
 }
 
 class AbstractClassDemonstration {
-    ArrayList<Object> arr = new ArrayList<>();
+    ArrayList<Creature> arr = new ArrayList<>();
 
     public AbstractClassDemonstration() {
         this.arr.add(new Human());
@@ -97,7 +97,11 @@ class AbstractClassDemonstration {
 
     public void printObjs() {
         for (int i = 0; i < this.arr.size(); i++) {
-            this.arr.get(i).bear();
+            this.arr.get(i).bear("Anton");
+        }
+
+        for (int i = 0; i < this.arr.size(); i++) {
+            this.arr.get(i).die();
         }
     }
 }
